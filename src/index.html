@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单页面路由</title>
+    <style>
+        html,body,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        h3{text-align: center;}
+        ul,li{
+            list-style: none;
+        }
+        body{
+            background-color: #eee;;
+        }
+        #navContent{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            border: 1px solid #ccc;
+            border-bottom: none;
+            box-sizing: border-box;
+            
+        }
+        #navContent>li {
+            border-right: 1px solid #ccc ;
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #navContent>li:last-child{
+            border: none;
+        }
+        #contentDetail{
+            height: 500px;
+            border:1px solid #ccc;
+        }
+        .active{
+            background-color: #e5c3f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="contentBox">
+        <h3>单页面路由</h3>
+        <div class="navgator">
+            <ul id="navContent" >
+                <li data="0" class="abc uv">导航一</li>
+                <li data="1">导航二</li>
+                <li data="2">导航三</li>
+            </ul>
+        </div>
+        <div id="contentDetail">
+
+        </div>
+    </div>
+</body>
+</html>
