@@ -1,6 +1,6 @@
 import { URL,http} from './api/http'
 let contentDom = document.getElementById("contentDetail")
-let currentPage,oldPage;
+let currentPage=0,oldPage;
 
 const eventInit = () => {
     let nav = document.getElementById("navContent")
